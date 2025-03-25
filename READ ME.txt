@@ -1,0 +1,28 @@
+OOP PRINCIPU LIETOJUMS-
+
+Mantošana- Pretinieki un spēlētājs manto no Character.cs
+Enkapsulācija- get ir izmantots Player.cs priekš character vārda, lai netiktu modificēts ārpus skripta
+	       get ir izmantots Character.cs priekš weapon, lai netiktu modificēts ārpus skripta
+	       set ir izmantots GameManager.cs priekš healingPotion, lai ierobžotu kā tas tiek mainīts & lai vienmēr būtu nenegatīva
+Polimorfisms- override ir izmantots Berserker.cs, lai varētu modificēt uzvedību berserker class, mainot kā damage tiek aprēķināts.
+	      override ir izmantots PoisonWeapon.cs, lai pārdefinētu klases Weapon ApplyEffect un pievienotu specifisku efektu.
+	      override ir izmantots HolySpear.cs, lai pārdefinētu klases Weapon ApplyEffect un pievienotu specifisku efektu
+	      overload ir izmantots Character.cs, lai izveidotu vairākas GetHit metodes ar vienādu nosaukumu, bet atšķirīgiem parametriem.
+Abstrakcija- Weapon.cs ir abstrakta klase ar regulāru metodi (GetDamage) un abstraktu metodi (ApplyEffect)
+	     PoisonWeapon.cs, HolySpear.cs, BasicWeapon.cs manto no Weapon klases
+
+PAPILDUZDEVUMS-
+
+* 3 dažādi ienaidnieki, katrs ar sava veida ieroci
+* Burvestības spēlētājam (healing)
+
+GENERAL INFO-
+
+* After enemy dies, next one spawns
+* Player can heal with heal button
+* 3 Different enemies each with a different weapon
+* Basic weapon has min and max range for damage
+* Poison bow has a poison damage component which deals additional set damage
+* Holy spear deals an additional amount of damage once the players health is below 10
+* Lose screen when players health is below 0
+* Win screen after defeating all 3 enemies

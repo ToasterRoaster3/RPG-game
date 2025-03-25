@@ -4,10 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Character : MonoBehaviour
-{
+{    
     public int health;
     [SerializeField] private Weapon weapon;
-    [SerializeField] private Image picture;
 
     public Weapon Weapon
     {
